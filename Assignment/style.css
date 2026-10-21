@@ -1,0 +1,220 @@
+/* Basic styles shared by all pages */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container,
+.page-wrapper,
+.details-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+header {
+    padding: 15px;
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    background-color: #222222;
+    color: white;
+}
+
+.banner-logo {
+    height: 40px;
+}
+
+.banner-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.banner-img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.navbar,
+.nav-links {
+    padding: 12px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.navbar a,
+.nav-links a {
+    margin: 0 8px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.intro {
+    padding: 15px;
+    background-color: #e8f5e9;
+}
+
+h3 {
+    color: #1b5e20;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #2e7d32;
+}
+
+a {
+    color: #0066cc;
+}
+
+.resource-list li {
+    margin-bottom: 12px;
+}
+
+.product-grid,
+.extra-info {
+    display: flex;
+    gap: 20px;
+}
+
+.product-media,
+.product-info,
+.card {
+    flex: 1;
+}
+
+.product-media {
+    text-align: center;
+}
+
+.product-media img {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 380px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+}
+
+.product-title {
+    margin-top: 0;
+}
+
+.price-tag {
+    color: #cc3333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 8px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+.specs-table th {
+    background-color: #eeeeee;
+}
+
+.map-section,
+.card,
+.tech-summary {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
+
+.map-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.map-container img {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #cccccc;
+}
+
+.larger-pic-link,
+.back-link {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.back-link {
+    padding: 8px 12px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+}
+
+.large-image-container {
+    margin: 20px 0;
+}
+
+.large-image-container img {
+    max-width: 100%;
+    border: 1px solid #cccccc;
+}
+
+.image-caption {
+    color: #555555;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .product-grid,
+    .extra-info {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
